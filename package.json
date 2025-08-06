@@ -9,20 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.6.1",
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/swagger-ui-react": "^5.18.0",
+    "bcrypt": "^6.0.0",
+    "jose": "^6.0.12",
+    "jsonwebtoken": "^9.0.2",
     "next": "15.4.1",
     "next-swagger-doc": "^0.4.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "swagger-ui-react": "^5.27.0"
+    "swagger-ui-react": "^5.27.0",
+    "zod": "^4.0.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
+    "@types/node-jose": "^1.1.13",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.4.1",
+    "supabase": "^2.31.4",
     "typescript": "^5"
   }
 }

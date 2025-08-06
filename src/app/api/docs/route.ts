@@ -41,22 +41,31 @@ export async function GET() {
       ],
       components: {
         schemas: {
-          Example: {
+          BaseResponse: {
             type: "object",
             properties: {
-              text: { type: "string" },
+              success: {
+                type: "boolean",
+                example: true,
+              },
+              code: {
+                type: "integer",
+                example: 200,
+              },
+              message: {
+                type: "string",
+                example: "Success create new user",
+              },
+              data: {
+                type: "object",
+                example: null,
+              },
             },
-            required: ["text"],
-          },
-        },
-        securitySchemes: {
-          BearerAuth: {
-            type: "http",
-            scheme: "bearer",
-            bearerFormat: "JWT",
+            required: ["success", "code", "message", "data"],
           },
         },
       },
+
       security: [
         {
           BearerAuth: [],
